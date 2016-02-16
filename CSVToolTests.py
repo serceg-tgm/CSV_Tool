@@ -3,7 +3,7 @@ from CSVReader import CSVReader
 
 csvFile = "RealEstateTransactions.csv"
 
-class CSVTool_Tests(TestCase):
+class CSVToolTests(TestCase):
 
     def testFileNotFoundError(self):
         self.assertRaises(FileNotFoundError, CSVReader.read, "kleiner Test...")
